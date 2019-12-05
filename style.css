@@ -1,0 +1,217 @@
+body, ul, li, a, h1, h2 ,nav, footer{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+}
+
+header{
+   background-color: #f63232; 
+   padding: 20px;
+   text-align: center;
+   position: fixed;
+   width: 100%;
+   z-index: 1;
+   top: 0;
+   left: 0;
+}
+header h1{
+    padding: 4px 43px;
+    color: white;
+    border: 8px solid white;
+    display: inline-block;
+    border-radius: 33px;
+}
+.banner{
+    position: relative;
+    
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    background-color: #feb614;
+    color: white;
+     padding: 30px; 
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+.banner h2{
+    font-size: 70px;
+}
+.banner h2 span{
+    font-size: 1.3em;
+}
+
+nav{
+    
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: sticky;
+    top: 100px;
+}
+nav ul{
+    white-space: nowrap; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size:25px;
+}
+nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+nav li a .join{
+    color: #f63232;
+
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color:#f63232;
+    font-size: 40px;
+}
+article p{
+    line-height: 2em;
+    color: #4b4b4b;
+    font-size: 20px;
+}
+.images{
+    text-align:center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+
+.images li img{
+    max-width: 100%;
+}
+.join{
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.join p{
+   font-size: 20px;
+}
+
+.join h2{
+    font-size: 40px;
+}
+
+form input{
+    margin:20px 0;
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 30px;
+    border: 4px solid white;
+
+}
+footer{
+    font-size: 22px;
+    top: 0%;
+    left: 0%;
+    background: #f63232;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+    color: tomato;
+}
+
+.images li:hover{
+    position: relative;
+    top: -4px;
+    z-index: -1;
+}
+
+
+form input:focus{
+    border: 4px solid #4b4b4b;
+    outline: none;
+}
+
+form input:valid{
+    border: 4px solid greenyellow;
+}
+
+
+nav li:first-child{
+    color: grey;
+}
+
+
+article p::first-line{
+    font-size: 1.2em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+section p::first-letter{
+    font-size: 2em;
+}
+
+/* responsive styles*/
+
+@media screen and (max-width:1400px){
+    .banner .welcome  h2{
+        
+        font-size: 20px;
+     }
+     nav li{
+         font-size: 19px;
+     }
+     @media screen and (max-width:960px){
+        .banner .welcome  h2{
+            font-size: 15px;
+         }
+         nav li{
+            font-size: 12px;
+        }
+     }
+     @media screen and (max-width:640px){
+        .banner .welcome {
+            position: relative;
+            text-align: center;
+         }
+         .banner .welcome br{
+
+            display: none;
+        }
+      .banner .welcome h2{
+          font-size:12px ;
+      }
+        
+     }
+     @media screen and (max-width:540px){
+         nav li{
+            
+             font-size: 10px;
+             display: block;
+             width: 100%;
+             margin: 12px 0;
+         }
+
+         header{
+             position: relative;
+         }
+         nav{
+            margin: 0;
+         }
+     }
